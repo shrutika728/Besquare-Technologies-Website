@@ -1,0 +1,134 @@
+/* Title border */
+.main-container .border-left {
+  margin-bottom: 30px;
+}
+
+/* Banner */
+.banner-area {
+  position: relative;
+  min-height: 500px;
+  color: #fff;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.banner-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-title {
+    font-size: 32px;
+  }
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.banner-heading {
+  text-align: center;
+}
+
+/* Section title */
+.section-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #0A3C54;
+}
+
+.section-sub-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  margin: 0 0 60px;
+  color: var(--warning);
+}
+
+@media (max-width: 575px) {
+  .section-sub-title {
+    font-size: 28px;
+  }
+}
+
+/* Column title */
+.column-title {
+  margin: 0 0 40px;
+}
+
+.column-title-small {
+  font-size: 20px;
+  margin: 0 0 25px;
+}
+
+/* Service box */
+.ts-service-box .ts-service-icon i {
+  font-size: 36px;
+  float: left;
+  color: linear-gradient(150deg, #009FFD 36%, #1567ba 100%);
+}
+
+.ts-service-box .ts-service-box-content {
+  margin-left: 62px;
+  margin-bottom: 30px;
+}
+
+.tab-content .ts-service-box .ts-service-box-content {
+  margin-left: 90px;
+}
+
+.ts-service-box .ts-service-box-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+.ts-service-box .ts-service-box-info {
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+
+.service-box-title {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.service-box-title a {
+  color: #0e1018;
+}
+
+.service-box-title a:hover {
+  color: var(--warning);
+}
+
+/* Service box bg */
+.ts-service-box-bg {
+  background: #252525;
+  color: #fff;
+  padding: 30px;
+}
+
+.ts-service-box-bg h4,
+.ts-service-box-bg h3 {
+  color: #fff;
+}

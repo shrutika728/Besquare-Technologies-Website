@@ -1,0 +1,394 @@
+/* General */
+html {
+  overflow-x: hidden;
+}
+
+._home {
+  height: 80vh;
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* NAVBAR */
+.home {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.navbar {
+  padding-top: 10px;
+}
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--bs-info-text-emphasis) !important;
+  background-color: var(--bs-white);
+  border-radius: 5px;
+}
+
+.bg-transparent {
+  background-color: #010103fa !important;
+}
+
+/* Company Title */
+.company-title {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.company-logo {
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 20%;
+  width: 70px;
+  height: 60px;
+}
+
+/* Hide Company Title on Small Screens */
+@media all and (max-width: 400px) {
+  .company-title {
+    display: none !important;
+  }
+}
+.nav-item {
+  padding: 0px 50px 0px 10px;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: #faee4b !important;
+}
+
+/* Drop Down */
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #ffea09;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: #171616;
+    border: 0px;
+}
+/* DISPLAY TEXT ON HOMEPAGE */
+.main-text-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-text,
+.sub-text {
+  font-family: "Poppins";
+  font-size: 4vw;
+  font-weight: 600;
+  color: #f7f6d2;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+.sub-text {
+  animation: slideFromRight 1s forwards;
+}
+.main-text {
+  animation: slideFromLeft 1s forwards;
+}
+@keyframes slideFromLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+/* EXPLORE BUTTON */
+.explore-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.explore {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 1px;
+  background: none;
+  color: white;
+  position: relative;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 190px;
+  font-size: 14px;
+  font-weight: 1000;
+  z-index: 2;
+  transition: 0.01s 0.23s ease-out all;
+  overflow: hidden;
+}
+
+/* Explore Button Pseudo Elements */
+.explore:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  background: #000000;
+  z-index: -1;
+  transition: 0.3s ease-in all;
+}
+.explore:after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: 5%;
+  height: 90%;
+  width: 5%;
+  background: white;
+  z-index: -1;
+  transition: 0.4s 0.02s ease-in all;
+}
+
+/* Hover Effects for Explore Button */
+.explore:hover {
+  cursor: pointer;
+  color: transparent;
+}
+.explore:hover:before {
+  left: 100%;
+  width: 25%;
+}
+.explore:hover:after {
+  left: 100%;
+  width: 70%;
+}
+.explore:hover .icon-right.after:after {
+  left: -80px;
+  color: white;
+  transition: 0.2s 0.2s ease all;
+}
+.explore:hover .icon-right.after:before {
+  left: -104px;
+  top: 14px;
+  opacity: 0.2;
+  color: white;
+}
+
+/* Icon Right */
+.icon-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.icon-right:after {
+  font-family: "FontAwesome";
+  content: "⟶";
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+  transform: translate3D(0, -50%, 0);
+}
+.icon-right.after:after {
+  left: -250px;
+  color: black;
+  transition: 0.15s 0.25s ease left, 0.5s 0.05s ease color;
+}
+.icon-right.after:before {
+  content: "EXPLORE";
+  position: absolute;
+  left: -230px;
+  top: 14px;
+  opacity: 0;
+  transition: 0.2s ease-in all;
+}
+
+/* Responsive */
+/* Padding for Display Text on Homepage */
+@media all and (min-width: 1500px) {
+  .main-text-container {
+    align-items: normal;
+  }
+  .main-text {
+    padding-left: 50px;
+  }
+  .sub-text {
+    padding-left: 550px;
+  }
+}
+
+/* Centering Title on Small Screens */
+
+@media all and (max-width: 992px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 20px !important;
+    top: 25px !important;
+  }
+  .main-text,
+  .sub-text {
+    font-size: 5vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .navbar-brand {
+    font-size: 13px !important;
+  }
+}
+
+
+/* Title */
+.title {
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+/* OUR CLENTS */
+
+.section-sub-title {
+      font-weight: 900;
+      font-size: 36px;
+      color: #212121;
+    }
+    @media (max-width: 575px) {
+      .section-sub-title {
+        font-size: 28px;
+      }
+    }
+
+/* Facts */
+.facts-wrapper {
+  text-align: center;
+  color: #f7f3c1;
+  padding: 100px 0;
+}
+
+/* FOOTER */
+.bg-dark {
+  background-color: black !important;
+  color: #ffffff !important;
+}
+.icons {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+}
+h6 {
+  color: #e5da08 !important;
+  margin-top: 20px;
+}
+.p-4 {
+  padding: 0.5rem !important;
+}
+
+/* Footer Links Hover Effect */
+.a:hover {
+    color: #f06e12; /* Change color as desired */
+}
+
+/* Footer Icons Hover Effect */
+.icons :hover {
+    color: hsl(130, 95%, 64%); /* Change color as desired */
+}
+
+/* TOGGLER */
+.menu {
+  --front: #394867;
+  --back: #9ba4b5;
+  --icon: #f1f6f9;
+  perspective: 600px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.menu input {
+  display: none;
+}
+.menu input + div span {
+  --rotateY: 0deg;
+  --background: var(--bs-yellow);
+  transform: rotateY(var(--rotateY));
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  background: var(--background);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
+}
+.menu input + div span:before,
+.menu input + div span:after {
+  --rotate: 0deg;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  border-radius: 1px;
+  top: 50%;
+  left: 50%;
+  background: var(--icon);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%) rotate(var(--rotate)) translateZ(6px);
+}
+
+.menu input + div span:first-child {
+  --background: #ede623;
+}
+.menu input + div span:first-child:before {
+  --rotate: -45deg;
+}
+.menu input + div span:first-child:after {
+  --rotate: 45deg;
+}
+.menu input + div span:last-child {
+  --rotateY: 180deg;
+}
+.menu input + div span:last-child:before {
+  box-shadow: 0 -5px 0 var(--icon), 0 5px 0 var(--icon);
+}
+.menu input + div span:last-child:after {
+  display: none;
+}
+.menu input:checked + div span:first-child {
+  --rotateY: -180deg;
+}
+.menu input:checked + div span:last-child {
+  --rotateY: 0deg;
+}
+

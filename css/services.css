@@ -1,0 +1,190 @@
+ body {
+  height: 20vh;
+  background-color: white;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: cover;
+
+}
+
+/*-- Banner --*/
+.banner-area {
+  position: relative;
+  height: 350px !important;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat
+  margin-top: 80px;
+}
+
+.banner-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-weight: lighter;
+}
+
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-title {
+    font-size: 32px;
+  }
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.banner-heading {
+  text-align: center;
+}
+
+.breadcrumb {
+  padding: 0;
+  background: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.breadcrumb li a, .breadcrumb .breadcrumb-item,.breadcrumb li a:focus, .breadcrumb li a:hover {
+  color: #fff !important;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+}
+
+
+/* Column title */
+.column-title {
+  margin: 0 0 40px;
+}
+
+.column-title-small {
+  font-size: 20px;
+  margin: 0 0 25px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.alert .icon {
+  margin-right: 15px;
+}
+
+h3.column-title {
+padding-top: 50px;
+}
+
+
+/* Slider pages */
+.page .carousel-control {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  transform: translateY(-50%);
+  background-color: transparent;
+  text-shadow: none;
+  transition: all 0.25s ease;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+.page .carousel-control.left {
+  left: 0;
+}
+
+.page .carousel-control.right {
+  right: 0;
+}
+
+.page .carousel-control i {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  line-height: 70px;
+  width: 40px;
+  height: 70px;
+  font-size: 22px;
+  border-radius: 0;
+  transition: all 500ms ease;
+}
+
+.page .carousel-control i:hover {
+  background: linear-gradient(150deg, #009FFD 36%, #1567ba 100%);;
+  color: #fff;
+}
+
+.page.small-bg .item {
+  min-height: 300px;
+  background-size: cover;
+  margin-top: 60px;
+}
+
+.page.small-bg .box-content {
+  left: 20%;
+}
+
+.page.small-bg .box-text {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 5px 20px;
+}
+
+.page.small-bg .box-slide-title {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 900;
+}
