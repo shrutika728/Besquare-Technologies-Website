@@ -7,7 +7,8 @@
     <link rel="icon" type="image/png" href="images/favicon.png"/>
 
     <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 
     <!-- FONTAWESOME ICONS -->
@@ -21,9 +22,11 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/home.css"/>
     <link rel="stylesheet" href="css/careers.css"/>
+
+
 </head>
 <body style="background: white">
-<div class="home" id="home">
+
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
         <div class="container-fluid">
@@ -34,7 +37,8 @@
                     <span class="sub-title">PRIVATE LIMITED</span>
                 </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <label class="menu">
                         <input type="checkbox" checked/>
@@ -53,9 +57,6 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="about.html">ABOUT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="testimonials.html">TESTIMONIALS</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICES</a>
                         <ul class="dropdown-menu">
@@ -68,7 +69,8 @@
                             <div class="drop2">
                                 <li><a class="dropdown-item" href="testing.html">Web/ App Testing</a></li>
                                 <li><a class="dropdown-item" href="automobile.html">Automobile (EV)</a></li>
-                                <li><a class="dropdown-item" href="app_development.html">Android / Web APP Development</a></li>
+                                <li><a class="dropdown-item" href="app_development.html">Android / Web APP Development</a>
+                                </li>
                             </div>
                         </ul>
                     </li>
@@ -79,7 +81,7 @@
             </div>
         </div>
     </nav>
-
+    <!-- NAVBAR END -->
     <div id="banner-area" class="banner-area" style="background-image:url(images/banner/01.jpg) !important">
         <div class="banner-text">
             <div class="container">
@@ -94,57 +96,66 @@
         </div><!-- Banner text end -->
     </div><!-- Banner area end -->
 
-    <section id="ts-service-area" class="ts-service-area pb-0">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="section-title">TO BE SUCCESSFUL, THE FIRST THING TO DO IS FALL IN LOVE WITH YOUR WORK.</h2>
-                    <h3 class="section-sub-title">Our open positions</h3>
-                </div>
-            </div>
-            <!--/ Title row end -->
+    <div class="container1">
+        <h2>Current Openings</h2>
 
-            <div class="row">
-                <div class="col-lg-6" style="padding-left: 100px;">
-                    <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-img">
-                            <img loading="lazy" src="images/job-search.png" alt="service-icon"/>
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="service-box-title">
-                                <a href="#">Embedded Systems</a>
-                            </h3>
-                            <p style="color:var(--warning)">
-                                Experience: 3+ years relevant experience
-                            </p>
-                            <h5 style="margin-top: -10px;">Location: Hyderabad</h5>
-                        </div>
-                    </div>
-                    <!-- Service 1 end -->
-
-                    <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-img">
-                            <img loading="lazy" src="images/job-search.png" alt="service-icon"/>
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="service-box-title">
-                                <a href="#">React JS</a>
-                            </h3>
-                            <p style="color:var(--warning)">
-                                Experience: 2.5 to 5 years relevant experience
-                            </p>
-                            <h5 style="margin-top: -10px;">Location: Hyderabad</h5>
-                        </div>
-                    </div>
-                    <!-- Service 2 end -->
-                </div>
-                <!-- Col end -->
+        <div class="job-listings">
+            <div class="job-listing">
+                <h4>Automation QA</h4>
+                <p>Experience: 4+ years | Location: Hyderabad</p>
+                <button class="apply-btn" onclick="showApplyForm('Automation QA')">Apply Now</button>
             </div>
-            <!-- Content row end -->
+
+            <div class="job-listing">
+                <h4>Product QA</h4>
+                <p>Experience: 3+ years | Location: Hyderabad</p>
+                <button class="apply-btn" onclick="showApplyForm('Product QA')">Apply Now</button>
+            </div>
+            <div class="job-listing">
+                <h4>Angular Developer</h4>
+                <p>Experience: 3+ years | Location: Hyderabad</p>
+                <button class="apply-btn" onclick="showApplyForm('Angular Developer')">Apply Now</button>
+            </div>
+
+            <div class="job-listing">
+                <h4> Python Developer - ML Expertise</h4>
+                <p>Experience: 4+ years | Location: Hyderabad</p>
+                <button class="apply-btn" onclick="showApplyForm('Python Developer - ML Expertise')">Apply Now</button>
+            </div>
+
+
+            <div class="job-listing">
+                <h4>Accessible Test & Developer </h4>
+                <p>Experience: 5+ years | Location: Hyderabad</p>
+                <button class="apply-btn" onclick="showApplyForm('Accessible Test & Developer')">Apply Now</button>
+            </div>
+
+
         </div>
-        <!--/ Container end -->
-    </section>
 
+        <!-- Apply Now Form (Hidden Initially) -->
+        <div id="applyForm">
+            <h3>Apply Now</h3>
+            <form action="https://formspree.io/f/xvgzldrz" method="POST" id="jobApplicationForm">
+                <label for="jobTitle">Applying for:</label>
+                <input type="text" id="jobTitle" name="jobTitle" readonly required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="experience">Years of Experience:</label>
+                <input type="text" name="experience" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <p id="successMessage">Your application has been submitted successfully!</p>
+        </div>
+
+    </div>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted">
         <!-- Section: Links -->
@@ -165,13 +176,15 @@
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4 footer-headings">Services</h6>
-                        <p class="footer-text"><a href="embedded.html" class="text-reset">Embedded Systems Design</a></p>
+                        <p class="footer-text"><a href="embedded.html" class="text-reset">Embedded Systems Design</a>
+                        </p>
                         <p class="footer-text"><a href="iot.html" class="text-reset">IoT</a></p>
                         <p class="footer-text"><a href="ai.html" class="text-reset">Artificial Intelligence</a></p>
                         <p class="footer-text"><a href="robotics.html" class="text-reset">Robotics</a></p>
                         <p class="footer-text"><a href="testing.html" class="text-reset">Web/App Testing</a></p>
                         <p class="footer-text"><a href="automobile.html" class="text-reset">Automobile (EV)</a></p>
-                        <p class="footer-text"><a href="app_development.html" class="text-reset">Android / Web APP Development</a></p>
+                        <p class="footer-text"><a href="app_development.html" class="text-reset">Android / Web APP
+                            Development</a></p>
                     </div>
                     <!-- Grid column -->
 
@@ -180,6 +193,7 @@
                         <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
                         <p><a href="index.html" class="text-reset">HOME</a></p>
                         <p><a href="about.html" class="text-reset">ABOUT US</a></p>
+                        <p><a href="testimonials.html" class="text-reset">TESTIMONIALS</a></p>
                         <p><a href="careers.html" class="text-reset">CAREERS</a></p>
                         <p><a href="contact.html" class="text-reset">CONTACT</a></p>
                     </div>
@@ -188,10 +202,13 @@
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fa fa-home me-3"></i>4th Floor, Plot No.47, H.No.1-98-9-3-30, Lakshmi Nilayam, Silicon Valley, Madhapur, Hyderabad, Telangana - 500081</p>
+                        <p><i class="fa fa-home me-3"></i>4th Floor, Plot No.47, H.No.1-98-9-3-30, Lakshmi Nilayam,
+                            Silicon Valley, Madhapur, Hyderabad, Telangana - 500081</p>
                         <p><i class="fa fa-envelope me-3"></i>info@besquaretech.com</p>
                         <p><i class="fa fa-phone me-3"></i>+91 90325 63983</p>
-                        <p><i class="fa fa-linkedin me-3"></i><a href="https://www.linkedin.com/company/besquaretech/" style="color: inherit" target="_blank">besquaretech</a></p>
+                        <p><i class="fa fa-linkedin me-3"></i><a href="https://www.linkedin.com/company/besquaretech/"
+                                                                 style="color: inherit" target="_blank">besquaretech</a>
+                        </p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -203,14 +220,16 @@
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Copyright -->
-            <div class="text-center p-4">© 2025 Copyright: <a class="text-reset fw-bold" href="#">besquaretech.com</a></div>
+            <div class="text-center p-4">© 2025 Copyright: <a class="text-reset fw-bold" href="#">besquaretech.com</a>
+            </div>
             <!-- Right -->
             <div class="icons">
                 <a href="" class="me-4 text-reset"><i class="fa fa-facebook-f"></i></a>
                 <a href="" class="me-4 text-reset"><i class="fa fa-twitter"></i></a>
                 <a href="" class="me-4 text-reset"><i class="fa fa-google"></i></a>
                 <a href="" class="me-4 text-reset"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/besquaretech" class="me-4 text-reset"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/besquaretech" class="me-4 text-reset"><i
+                        class="fa fa-linkedin"></i></a>
             </div>
             <!-- Right -->
         </section>
@@ -221,11 +240,15 @@
     <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="js/counter.js"></script>
     <script src="js/clients.js"></script>
+    <script src="js/careers.js"></script>
+
 </div>
 </body>
 </html>

@@ -56,12 +56,13 @@ body {
     display: block;
     font-size: 25px;
     line-height: 30px;
-    color: #fffffffa;
+    color: #a5d5e1 ;
     font-weight: 1000;
     margin-bottom: 15px;
 }
 
 .sec-title h2 {
+font-family: Courier, monospace;
   position: relative;
   display: block;
   font-size: 30px;
@@ -151,7 +152,7 @@ body {
 }
 
 .btn-style-one:hover {
-  background-color: #f7f6d2;
+  background-color: #70bada;
 
 }
 .about-section {
@@ -178,7 +179,7 @@ body {
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 25px;
-  color: #dee2e6;
+  color: #a5d5e1 ;
   font-weight: 550;
 }
 
@@ -252,7 +253,7 @@ body {
   left: -3px;
   background: transparent;
   z-index: 0;
-  border: 40px solid #e1da5e;
+  border: 40px solid #a5d5e1 ;
 }
 
 /* Services
@@ -290,11 +291,11 @@ body {
 }
 
 .service-box-title a {
-  color: #f6ba1a;
+  color: #a5d5e1;
 }
 
 .service-box-title a:hover {
-  color: #e1da5e;
+  color: #babe7a;
 }
 
 .service-box-p {
@@ -321,7 +322,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   font-weight: 400;
-  color: #ffd600fa;
+  color: rgb(255, 255, 255);
   padding-top: 20px;
 }
 

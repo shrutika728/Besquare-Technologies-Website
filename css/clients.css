@@ -193,7 +193,7 @@
     position: absolute;
     width: 200px;
     z-index: 2;
-    background: linear-gradient(to right, #f3dc01 0%, hsla(0, 0%, 100%, 0) 100%);
+    background: linear-gradient(to right, #0dcaf0 0%, hsla(0, 0%, 100%, 0) 100%);
 }
 
 .slider:before {

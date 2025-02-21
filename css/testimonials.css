@@ -1,70 +1,54 @@
-* {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.h2{
+    color: #faee4b !important;
     }
-    body {
-        background: #f4f4f4;
-        color: #333;
-    }
-    .navbar {
-        background: #333;
-        color: white;
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.theme-toggle i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Project Card */
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Images */
+.project-images img {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.project-images img:hover {
+    transform: scale(1.4);
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .project-card {
         padding: 15px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
     }
-
-     .container {
-            width: 100%;
-            margin: auto;
-            padding: 10px;
-    }
-    .project {
-        background: white;
-        margin: 20px 0;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    .project img {
-        width: 180px;
-        height: auto;
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-    }
-    .project img:hover {
-        transform: scale(1.05);
-    }
-    .project-text {
-        flex: 1;
-    }
-    .project h2 {
-        color: #faee4b ;
-        margin-bottom: 10px;
-    }
-    .contact {
-        background: #007BFF;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
-        font-size: 18px;
-    }
-
-    @media (max-width: 768px) {
-        .project {
-            flex-direction: column;
-            text-align: center;
-        }
-        .project img {
-            width: 100%;
-            max-width: 300px;
-        }
-    }
-
+}
