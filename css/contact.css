@@ -15,7 +15,7 @@
     margin: 0;
     text-transform: uppercase;
     font-weight: 800;
-    color: #fff41a;
+    color: #1bbae2;
     padding-top: 25px;
 }
 
@@ -101,7 +101,7 @@
 .ts-service-icon.icon-round i {
   font-size: 24px;
   color: #fff;
-  background: linear-gradient(150deg, #e5d912 36%, #e5d912 100%);;
+  background: linear-gradient(150deg, #1bbae2 36%, #1bbae2 100%);
   text-align: center;
   border-radius: 100%;
   width: 60px;
