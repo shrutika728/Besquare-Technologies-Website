@@ -10,13 +10,13 @@
 /* Title Border */
 /* Section title */
 .section-title {
-    font-size: 22px;
-    line-height: 30px;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #1bbae2;
-    padding-top: 25px;
+  font-size: 22px;
+  line-height: 30px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #1bbae2;
+  padding-top: 25px;
 }
 
 .section-sub-title {
@@ -200,18 +200,18 @@
 }
 
 .gap-40 {
-clear: both;
-height: 40px;
+  clear: both;
+  height: 40px;
 }
 
 .column-title {
-margin: 0 0 40px;
+  margin: 0 0 40px;
 }
 
 /* Google Map */
 .google-map-container {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 

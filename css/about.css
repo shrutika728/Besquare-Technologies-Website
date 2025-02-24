@@ -1,6 +1,4 @@
-
 body {
-
   background-image: url("../images/about.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -62,15 +60,15 @@ body {
 }
 
 .sec-title h2 {
-font-family: Courier, monospace;
-  position: relative;
-  display: block;
-  font-size: 30px;
-  line-height: 1.28em;
-  color: #fffffffa;
-  font-weight: 600;
-  padding-bottom: 18px;
-  padding-top: 18px;
+    font-family: Courier, monospace;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.28em;
+    color: #fffffffa;
+    font-weight: 600;
+    padding-bottom: 18px;
+    padding-top: 18px;
 }
 
 .sec-title h2:before {
@@ -175,7 +173,7 @@ font-family: Courier, monospace;
 }
 
 .about-section .text {
-   margin-top: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 25px;

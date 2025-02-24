@@ -183,17 +183,17 @@
   touch-action: none;
 }
 .slider:before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slider:before, .slider:after {
-    content: "";
-    height: 75pt;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-    background: linear-gradient(to right, #0dcaf0 0%, hsla(0, 0%, 100%, 0) 100%);
+  content: "";
+  height: 75pt;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(to right, #0dcaf0 0%, hsla(0, 0%, 100%, 0) 100%);
 }
 
 .slider:before {

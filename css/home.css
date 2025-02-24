@@ -85,7 +85,7 @@ html {
 }
 /* DISPLAY TEXT ON HOMEPAGE */
 .main-text-container {
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,17 +274,16 @@ html {
 }
 
 /* OUR CLENTS */
-
 .section-sub-title {
       font-weight: 900;
       font-size: 36px;
       color: #212121;
     }
-    @media (max-width: 575px) {
-      .section-sub-title {
-        font-size: 28px;
-      }
+@media (max-width: 575px) {
+  .section-sub-title {
+    font-size: 28px;
     }
+}
 
 /* Facts */
 .facts-wrapper {
@@ -314,7 +313,7 @@ h6 {
 
 /* Footer Links Hover Effect */
 .a:hover {
-    color: #f06e12; /* Change color as desired */
+  color: #f06e12; /* Change color as desired */
 }
 
 /* Footer Icons Hover Effect */
