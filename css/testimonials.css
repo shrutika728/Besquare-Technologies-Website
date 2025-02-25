@@ -1,10 +1,12 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    color: #060000d3;
     transition: all 0.3s ease-in-out;
-}
-
+    background-image: url(../images/about.jpeg);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+  }
 .h2{
     color: #faee4b !important;
     }

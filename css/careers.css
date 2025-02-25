@@ -1,3 +1,5 @@
+
+
   /* Title border */
   .main-container .border-left {
     margin-bottom: 30px;
@@ -137,9 +139,14 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url(../images/about.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
-  }
+    background-size: cover;
+    
+    }
+ 
 
   .container1 {
     max-width: 1000px;

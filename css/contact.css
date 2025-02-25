@@ -1,11 +1,8 @@
  body {
-  height: 20vh;
-  background-color: white;
-  background-image: url("");
+  background-image: url(../images/about.jpeg);
   background-repeat: no-repeat;
   background-position:  center;
   background-size: cover;
-
 }
 /* Title Border */
 /* Section title */
@@ -24,7 +21,7 @@
   font-size: 36px;
   line-height: 46px;
   margin: 0 0 60px;
-  color: #212121;
+  color: #ffffff;;
 }
 @media (max-width: 575px) {
   .section-sub-title {
